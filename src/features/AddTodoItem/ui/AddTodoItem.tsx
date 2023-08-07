@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import {AddTodoItem as AddTodoItemAPI} from "../api/AddTodoItem";
-import {TodoCard} from "../../../shared/TodoCard/ui/TodoCard";
 import {CardTextWrapper, CardWrapper, Notes, Title} from "../../../shared/TodoCard/ui/TodoCard.styles";
-import TodoList from "../../../entities/TodoList/ui/TodoList";
 import {TodoItemProps} from "../../../entities/TodoItem/ui/TodoItem";
 import {Column} from "../../../shared/Wrapper";
 

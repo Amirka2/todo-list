@@ -9,22 +9,7 @@ const todoItemsProps = [
         checkbox: false,
         title: '1',
         children: '1 note'
-    },
-    {
-        checkbox: false,
-        title: '2',
-        children: '2 note'
-    },
-    {
-        checkbox: false,
-        title: '3',
-        children: '3 note'
-    },
-    {
-        checkbox: false,
-        title: '4',
-        children: '4 note'
-    },
+    }
 ]
 
 function TodoApp() {
