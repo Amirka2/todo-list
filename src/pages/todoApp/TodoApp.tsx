@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './TodoApp.css';
-import TodoList from "../../entities/TodoList/ui/TodoList";
-import AddTodoItem from "../../features/AddTodoItem/ui/AddTodoItem";
+import {TodoList} from "../../entities/TodoList";
+import {AddTodoItem} from "../../features/AddTodoItem";
 import {TodoItemProps} from "../../entities/TodoItem/ui/TodoItem";
 
 const todoItemsProps = [

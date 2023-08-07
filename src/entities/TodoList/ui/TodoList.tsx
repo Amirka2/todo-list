@@ -1,11 +1,12 @@
 import React from 'react';
-import TodoItem, {TodoItemProps} from "../../TodoItem/ui/TodoItem";
+import {TodoItemProps} from "../../TodoItem/ui/TodoItem";
+import {TodoItem} from "../../TodoItem";
 import {Column} from "../../../shared/Wrapper";
 
 export interface TodoListProps {
     TodoItemProps: TodoItemProps[];
 }
-const TodoList = (props: TodoListProps) => {
+export const TodoList = (props: TodoListProps) => {
     let todoItems = props.TodoItemProps.map(itemProps => {
         return (<TodoItem checkbox={itemProps.checkbox} title={itemProps.title}>
             {itemProps.children}
@@ -17,5 +18,3 @@ const TodoList = (props: TodoListProps) => {
         </Column>
     );
 };
-
-export default TodoList;

@@ -12,7 +12,7 @@ export const CardWrapper = styled(Row)`
 `;
 
 export const CardTextWrapper = styled(Column)`
-  width: 95%;
+  width: 100%;
   padding: 5px 0 5px 0;
 `;
 
