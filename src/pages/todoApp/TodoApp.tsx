@@ -1,16 +1,33 @@
 import React from 'react';
 import './TodoApp.css';
-import {TodoCard} from "../../shared/TodoCard/ui/TodoCard";
+import TodoList from "../../entities/TodoList/ui/TodoList";
 
+const todoItemsProps = [
+    {
+        checkbox: false,
+        title: '1',
+        children: '1 note'
+    },
+    {
+        checkbox: false,
+        title: '2',
+        children: '2 note'
+    },
+    {
+        checkbox: false,
+        title: '3',
+        children: '3 note'
+    },
+    {
+        checkbox: false,
+        title: '4',
+        children: '4 note'
+    },
+]
 function TodoApp() {
   return (
       <div>
-          <TodoCard checkbox={true} title='New todo'>
-              note for the new todo
-          </TodoCard>
-          <TodoCard checkbox={false} title={'Title'}>
-              child of the second todo
-          </TodoCard>
+        <TodoList TodoItemProps={todoItemsProps}></TodoList>
       </div>
   );
 }
