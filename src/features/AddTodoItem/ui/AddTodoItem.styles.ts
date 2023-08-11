@@ -5,12 +5,18 @@ import {Column} from "../../../shared/Wrapper";
 export const TitleInput = styled(Input)`
   height: 30px;
   font-size: 24px;
+  ${({ theme }) => `
+    color: ${theme.color};
+  `}
 `;
 
 export const NoteInput = styled(Input)`
   height: 20px;
   width: 100%;
   font-size: 14px;
+  ${({ theme }) => `
+    color: ${theme.color};
+  `}
 `;
 
 export const InputFields = styled(Column)`
@@ -33,4 +39,8 @@ export const SubmitButton = styled.button`
   border: none;
   border-radius: 7px;
   margin: 0 5px 0 0;
+  ${({ theme }) => `
+    color: ${theme.buttonColor};
+    background-color: ${theme.buttonBackground};
+  `}
 `;

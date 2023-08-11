@@ -12,3 +12,13 @@ export const Row = styled.div`
   justify-content: flex-start;
   align-items: center;
 `;
+
+export const Wrapper = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  ${({ theme }) => `
+    background-color: ${theme.wrapperBackground};
+  `}
+`;

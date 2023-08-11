@@ -8,7 +8,10 @@ export const CardWrapper = styled(Row)`
   border: 1px solid black;
   border-radius: 12px;
   margin: 3px;
-  background-color: #0c89de;
+  ${({ theme }) => `
+    background-color: ${theme.background};
+    color: ${theme.color};
+  `}
 `;
 
 export const CardTextWrapper = styled(Column)`
@@ -20,18 +23,15 @@ export const Checkbox = styled.input`
   width: 15px;
   height: 15px;
   margin: 5px;
-  border: 1px solid #a90000;
   border-radius: 50%;
   border-style: outset;
 `;
 
 export const Title = styled.h2`
-  color: #ffffff;
 `;
 
 export const Notes = styled.p`
   width: 100%;
-  color: #ffffff;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
