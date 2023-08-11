@@ -1,1 +1,1 @@
-export { Column, Row } from './ui/Wrapper.styles';
+export { Column, Row, Wrapper } from './ui/Wrapper.styles';

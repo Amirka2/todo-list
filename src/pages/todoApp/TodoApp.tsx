@@ -5,7 +5,7 @@ import {AddTodoItem} from "../../features/AddTodoItem";
 import {TodoItemProps} from "../../entities/TodoItem/ui/TodoItem";
 import {ThemeProvider} from "styled-components";
 import {ThemeToggle, themeOptions, themes} from "../../shared/Themes";
-import {Wrapper} from "../../shared/Wrapper/ui/Wrapper.styles";
+import {Wrapper} from "../../shared/Wrapper";
 
 const todoItemsProps = [
     {
