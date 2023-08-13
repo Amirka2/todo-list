@@ -5,7 +5,7 @@ import {AddTodoItem} from "../../features/AddTodoItem";
 import {TodoItemProps} from "../../entities/TodoItem/ui/TodoItem";
 import {ThemeProvider} from "styled-components";
 import {ThemeToggle, themeOptions, themes} from "../../shared/Themes";
-import {Wrapper} from "../../shared/Wrapper";
+import {MainWrapper} from "../../shared/Wrapper";
 
 const todoItemsProps = [
     {
@@ -29,11 +29,11 @@ function TodoApp() {
 
     return (
         <ThemeProvider theme={themes[theme]}>
-            <Wrapper>
+            <MainWrapper>
                 <ThemeToggle toggleTheme={toggleTheme}></ThemeToggle>
                 <TodoList TodoItemProps={todoItemProps}></TodoList>
                 <AddTodoItem addTodoItem={addTodoItem}></AddTodoItem>
-            </Wrapper>
+            </MainWrapper>
         </ThemeProvider>
     );
 }
