@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import {Column, Row} from '../../Wrapper';
 
 export const CardWrapper = styled(Row)`
+  justify-content: space-between;
   min-width: 400px;
   min-height: 50px;
   width: 80vw;
   border: 1px solid black;
   border-radius: 12px;
   margin: 3px;
+  padding: 10px;
   ${({ theme }) => `
     background-color: ${theme.background};
     color: ${theme.color};
@@ -17,14 +19,6 @@ export const CardWrapper = styled(Row)`
 export const CardTextWrapper = styled(Column)`
   width: 100%;
   padding: 5px 0 5px 0;
-`;
-
-export const Checkbox = styled.input`
-  width: 15px;
-  height: 15px;
-  margin: 5px;
-  border-radius: 50%;
-  border-style: outset;
 `;
 
 export const Title = styled.h2`

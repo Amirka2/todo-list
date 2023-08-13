@@ -6,6 +6,7 @@ export const themes = {
         buttonBackground: Colors.darkGray,
         buttonColor: Colors.white,
         wrapperBackground: Colors.white,
+        toggleTextColor: Colors.blue,
     },
     dark: {
         background: Colors.darkGray,
@@ -13,6 +14,7 @@ export const themes = {
         buttonBackground: Colors.lightGray,
         buttonColor: Colors.black,
         wrapperBackground: Colors.black,
+        toggleTextColor: Colors.white,
     }
 };
 export enum themeOptions {

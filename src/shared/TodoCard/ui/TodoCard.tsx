@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {CardTextWrapper, CardWrapper, Checkbox, Notes, Title} from "./TodoCard.styles";
+import {CardTextWrapper, CardWrapper, Notes, Title} from "./TodoCard.styles";
+import {Label, Toggle} from "../../Themes";
 
 export interface cardProps {
     checkbox: boolean;
@@ -14,11 +15,14 @@ export const TodoCard = (props: cardProps) => {
     return (
         <div className='todo-card'>
             <CardWrapper>
-                <Checkbox type='checkbox' checked={checked} onClick={handleChecked}/>
                 <CardTextWrapper>
                     <Title className='title'>{props.title}</Title>
                     <Notes className='notes'>{props.children}</Notes>
                 </CardTextWrapper>
+                <div>
+                    <Toggle id='checked' type='checkbox' checked={checked} onChange={handleChecked}/>
+                    <Label htmlFor='checked'></Label>
+                </div>
             </CardWrapper>
         </div>
     );

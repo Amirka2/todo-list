@@ -1,4 +1,5 @@
 import {styled} from 'styled-components';
+import {CardWrapper} from "../../../TodoCard";
 
 export const Toggle = styled.input`
   display: none;
@@ -11,9 +12,13 @@ export const Toggle = styled.input`
   }
   
 `;
-export const Container = styled.div`
-  display: block;
-  
+export const Container = styled(CardWrapper)`
+  justify-content: flex-end;
+  padding: 10px;
+  ${({ theme }) => `
+    color: ${theme.toggleTextColor};
+    border: 1px solid ${theme.toggleTextColor};
+  `}
 `;
 
 export const Label = styled.label`
