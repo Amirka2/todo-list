@@ -13,7 +13,7 @@ export const Row = styled.div`
   align-items: center;
 `;
 
-export const Wrapper = styled.div`
+export const MainWrapper = styled(Column)`
   margin: 0;
   padding: 0;
   width: 100vw;
