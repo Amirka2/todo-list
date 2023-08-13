@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {AddTodoItem as AddTodoItemAPI} from "../api/AddTodoItem";
-import {CardTextWrapper, CardWrapper} from "../../../shared/TodoCard";
+import {CardWrapper} from "../../../shared/TodoCard";
 import {TodoItemProps} from "../../../entities/TodoItem/ui/TodoItem";
-import {Column, Row} from "../../../shared/Wrapper";
 import {NoteInput, TitleInput, InputFields, Form, SubmitButton} from "./AddTodoItem.styles";
 
 export interface AddTodoItemProps {
@@ -33,20 +32,18 @@ export const AddTodoItem = (props: AddTodoItemProps) => {
     }
 
     return (
-        <Column>
-            <CardWrapper>
-                <CardTextWrapper>
-                    <Form onSubmit={handleSubmit}>
-                        <InputFields>
-                            <TitleInput name='title' type='text' value={title} placeholder={'Title'}
-                                        onChange={handleTitle}/>
-                            <NoteInput name='note' type='text' value={note} placeholder={'Notes'}
-                                       onChange={handleNote}/>
-                        </InputFields>
-                        <SubmitButton type='submit'>Add</SubmitButton>
-                    </Form>
-                </CardTextWrapper>
-            </CardWrapper>
-        </Column>
+        <CardWrapper>
+            <Form onSubmit={handleSubmit}>
+                <InputFields>
+                    <TitleInput name='title' type='text' value={title} placeholder={'Title'}
+                                onChange={handleTitle}/>
+                    <NoteInput name='note' type='text' value={note} placeholder={'Notes'}
+                               onChange={handleNote}/>
+                </InputFields>
+                <div>
+                    <SubmitButton type='submit'>Add</SubmitButton>
+                </div>
+            </Form>
+        </CardWrapper>
     );
 };
